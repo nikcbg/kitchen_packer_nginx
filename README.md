@@ -5,7 +5,7 @@
 
 #### List of files in the repository
 
-File name | File Description
+File name | File description
 ----------|--------------------------------------------------
 `http/preseed.cfg` | script that installs Ubuntu.
 `scripts/provision.sh` | script that installs `nginx`.
