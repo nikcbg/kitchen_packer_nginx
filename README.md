@@ -67,12 +67,15 @@ rbenv ()
 - Execute `gem install bundler` to install `gem`whuch is package manager for `ruby`, the output will display the following:
 
 
-### Commands needed to test with `kitchen`.
-- Execute `bundle exec kitchen list` to list `kitchen` instances.
-- Execute `bundle exec kitchen converge` to create `kitchen` environment.
-- Execute `bundle exec kitchen verify` command to execute `kitchen` test.
-- Execute `bundle exec kitchen destroy` to destroy `kitchen` environment.
-- Execute `bundle exec kitchen test` to automatically build, test and destroy `kitchen` environment.
+### Commands needed to test with `kitchen`
+
+Command execution | Command descriptio
+------------------|---------------------------------------------
+`bundle exec kitchen list` | to list `kitchen` instances.
+`bundle exec kitchen converge` | to create `kitchen` environment.
+`bundle exec kitchen verify` | command to execute `kitchen` test.
+`bundle exec kitchen destroy` | to destroy `kitchen` environment.
+`bundle exec kitchen test` | to automatically build, test and destroy `kitchen` environment.
 
 ### TO DO:
 - Check if `nginx` is installed on the xenial64 box.
