@@ -6,9 +6,9 @@ provisioner:
   name: shell
 
 platforms:
-  - name: vbox/nginx64
+  - name: vbox/nginx64_2
     driver:
-      box: nginx64
+      box: nginx64_2
       provider: virtualbox
  
 verifier:
