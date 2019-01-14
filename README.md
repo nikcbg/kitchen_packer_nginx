@@ -1,4 +1,4 @@
-# kitchen_packer_nginx
+# kitchen_packer_nginx64
 
 ### Purpose of the repository 
 - The repository should have the minimal code for creating Ubuntu xenial64 box with `packer` and should also install `nginx`.
@@ -19,14 +19,14 @@ File name | File Description
 - Install `virtualbox` by following this [instructions](https://www.virtualbox.org/wiki/Downloads).
 - Install `vagrant` by following this [instructions](https://www.vagrantup.com/docs/installation/).
 - Install `packer` by following this [instructions](https://www.packer.io/intro/getting-started/install.html).
-- Clone the repository to your local computer: `git clone git@github.com:nikcbg/packer_nginx64.git`.
-- Go to the cloned repo on your computer: `cd packer_nginx64`.
+- Clone the repository to your local computer: `git clone git@github.com:nikcbg/kitchen_packer_nginx64.git`.
+- Go to the cloned repo on your computer: `cd kitchen_packer_nginx64`.
 - Execute `packer validate template.json` to validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message. 
 - Execute `packer build template.json`  to start building the virtual machine you need to run your tests on. 
-- After that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was created successfully.
+- After that you should see this message `nginx64_2-vbox: 'virtualbox' provider box: nginx64_2-vbox.box` which means that the VM box was created successfully.
 - Execute `vagrant box list` to see the list of `vagrant` boxes.
-- Execute `vagrant box add --name nginx64 nginx64-vbox.box`  to add the newly created `packer` box. 
-- Execute `vagrant init nginx64` to create Vagrantfile if one doesn't already exist.  
+- Execute `vagrant box add --name nginx64_2 nginx64_2-vbox.box`  to add the newly created `packer` box. 
+- Execute `vagrant init nginx64_2` to create Vagrantfile if one doesn't already exist.  
 - Execute `vagrant up` command to power up the VM.
 - Execute `vagrant ssh` to log in to the VM.
 - Execute `service nginx status` to see if `nginx` web server is installed and runing. 
@@ -65,10 +65,7 @@ rbenv ()
 - Execute `rbenv local 2.5.3` to set the default version of `ruby` to your local directory.
 - Execute `rbenv -v` to make sure `ruby` is installed and you have the correct version.
 - Execute `gem install bundler` to install `gem`whuch is package manager for `ruby`, the output will display the following:
-```
-Successfully installed bundler-1.17.1
-1 gem installed
-```
+
 
 ### Commands needed to test with `kitchen`.
 - Execute `bundle exec kitchen list` to list `kitchen` instances.
